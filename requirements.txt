@@ -1,12 +1,11 @@
-# Streamlit for the web app
 streamlit==1.38.0
 
-# Ultralytics YOLO (latest supports Python 3.12)
-ultralytics==8.2.98
+# YOLO (Ultralytics)
+ultralytics==8.3.34
 
-# Torch compatible with Python 3.12
-torch==2.5.1
-torchvision==0.20.1
+# Torch & Vision (Py3.11 compatible)
+torch==2.2.2
+torchvision==0.17.2
 
 # Image processing
 opencv-python-headless==4.10.0.84
@@ -15,10 +14,10 @@ pillow==10.4.0
 # Numerical & data handling
 numpy==1.26.4
 pandas==2.2.2
-scipy==1.14.1
+scipy==1.13.1
 
-# OCR (optional)
+# OCR (if your project uses text detection)
 pytesseract==0.3.13
 
-# Progress bar & logging
+# Utilities
 tqdm==4.66.5
