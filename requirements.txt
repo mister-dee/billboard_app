@@ -1,23 +1,6 @@
 streamlit==1.38.0
-
-# YOLO (Ultralytics)
+pillow
+torch==2.5.1
 ultralytics==8.3.34
-
-# Torch & Vision (Py3.11 compatible)
-torch==2.2.2
-torchvision==0.17.2
-
-# Image processing
-opencv-python-headless==4.10.0.84
-pillow==10.4.0
-
-# Numerical & data handling
-numpy==1.26.4
-pandas==2.2.2
-scipy==1.13.1
-
-# OCR (if your project uses text detection)
-pytesseract==0.3.13
-
-# Utilities
-tqdm==4.66.5
+opencv-python-headless
+requests
