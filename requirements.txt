@@ -3,22 +3,22 @@ streamlit==1.38.0
 
 # YOLO (Ultralytics YOLOv8)
 ultralytics==8.3.34
-torch==2.2.2
-torchvision==0.17.2
+# CPU-friendly PyTorch (smaller wheels)
+torch==2.2.2+cpu
+torchvision==0.17.2+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 
 # Image processing
-opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
 pillow==10.4.0
 
 # Numerical & data handling
 numpy==1.26.4
 pandas==2.2.2
-
-# Geometry/math helpers
 scipy==1.14.1
 
-# Optional OCR (if billboard text detection is needed)
+# OCR (optional, remove if not using)
 pytesseract==0.3.13
 
-# Progress bars & logging
+# Progress bar & logging
 tqdm==4.66.5
