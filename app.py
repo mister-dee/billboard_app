@@ -1,3 +1,17 @@
+# --- Auto-install missing dependencies ---
+import importlib, subprocess, sys
+
+def ensure_package(pkg):
+    try:
+        importlib.import_module(pkg)
+    except ImportError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
+
+# Ensure required packages
+for package in ["Pillow", "requests"]:
+    ensure_package(package)
+
+# --- Your original imports ---
 import streamlit as st
 from PIL import Image
 from ai_service import analyze_billboard, BILLBOARD_RULES
